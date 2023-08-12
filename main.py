@@ -1,6 +1,6 @@
-from dia_api import fetch_fantom_mimatic_price, fetch_polygon_mimatic_price
-from coingecko_api import fetch_coingecko_price
-from dextools_api import fetch_dextools_price
+from api.dia_api import fetch_fantom_mimatic_price, fetch_polygon_mimatic_price
+from api.coingecko_api import fetch_coingecko_price
+from api.dextools_api import fetch_dextools_price
 
 def highlight_divergence(price1, price2, threshold_percent):
     divergence = abs(price1 - price2) / price1 * 100
