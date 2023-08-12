@@ -2,7 +2,7 @@ name: Data Comparison
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Run every day at midnight UTC
+    - cron: '25 16 * * *' # Runs at 4:25 PM UTC, which is 9:55 PM IST
   workflow_dispatch:
 
 jobs:
