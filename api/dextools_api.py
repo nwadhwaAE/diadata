@@ -2,6 +2,8 @@ import requests
 import os
 
 def fetch_dextools_price(chain, address):
+    print(f"Using API key: {os.environ.get('DISCORD_WEBHOOK_URL')}")
+    print(f"Using API key: {os.environ.get('TESTDATA')}")
     print(f"Using API key: {os.environ.get('DEXTTOOLS_API_KEY')}")
     url = 'https://api.dextools.io/v1/token'
     params = {
