@@ -1,7 +1,9 @@
 import requests
 
+# Function to fetch price data from CoinGecko API
 def fetch_coingecko_price(contract_address, chain):
     url = ''
+    # Checking the chain and setting the URL and parameters accordingly
     if chain == 'fantom':
         url += 'https://api.coingecko.com/api/v3/simple/token_price/fantom'
         params = {
@@ -14,8 +16,10 @@ def fetch_coingecko_price(contract_address, chain):
             'vs_currency': 'usd',
             'ids': 'mimatic'
         }
+    # Sending a GET request to the CoinGecko API
     response = requests.get(url, params=params)
     
+    # Checking the response status code
     if response.status_code == 200:
         data = response.json()
         return data

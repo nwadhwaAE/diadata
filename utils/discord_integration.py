@@ -1,8 +1,10 @@
 import os
 import requests
 
+# Get the Discord Webhook URL from environment variables
 DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL') 
 
+# Function to send a message to Discord
 def send_discord_message(message):
     data = {
         "content": message
@@ -15,6 +17,7 @@ def send_discord_message(message):
     else:
         print(f"Failed to send message to Discord. Status code: {response.status_code}")
 
+# Function to send comparison message to Discord
 def discord_message_comparison(fantom_dextools_msg, fantom_coingecko_msg, polygon_dextools_msg, polygon_coingecko_msg):
     message = (
         f"**\n"
@@ -30,6 +33,7 @@ def discord_message_comparison(fantom_dextools_msg, fantom_coingecko_msg, polygo
 
     send_discord_message(message)
 
+# Function to send price message to Discord
 def discord_message_price(dia_fantom_price, dia_polygon_price, 
         dextools_fantom_price, dextools_polygon_price,
         coingecko_fantom_price, coingecko_polygon_price):
@@ -45,8 +49,6 @@ def discord_message_price(dia_fantom_price, dia_polygon_price,
         f"Fantom: {coingecko_fantom_price:.2f}\n"
         f"Polygon: {coingecko_polygon_price:.2f}\n"
         f"**\n"
-
     )
 
     send_discord_message(message)
-
