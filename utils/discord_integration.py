@@ -24,7 +24,8 @@ def discord_message_comparison(fantom_dextools_msg, fantom_coingecko_msg, polygo
         f"Polygon MiMATIC price comparison:\n"
         f"DIA vs DEXTools: {polygon_dextools_msg}\n"
         f"DIA vs CoinGecko: {polygon_coingecko_msg}\n"
-        f"**\n"
+        f"**\n\n"
+        f"*Inconsistency in prices on fantom:: Multichain has suffered a force majeure event, an exploit, and unauthorized withdrawals on 24/7. These events have led to the removal of the backing of most assets used within Fantom DeFi.*"
     )
 
     send_discord_message(message)
