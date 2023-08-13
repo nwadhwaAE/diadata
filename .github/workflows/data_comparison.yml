@@ -20,9 +20,9 @@ jobs:
 
       - name: Print Environment Variables
         run: |
-          echo "DEXTTOOLS_API_KEY: $DEXTTOOLS_API_KEY"
-          echo "DISCORD_WEBHOOK_URL: $DISCORD_WEBHOOK_URL"
-          echo "${{ secrets.TESTDATA }}"
+          echo "DEXTTOOLS_API_KEY: ${{ secrets.DEXTTOOLS_API_KEY }}"
+          echo "DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}"
+          echo "TestData: ${{ secrets.TESTDATA }}"
 
       - name: Install dependencies
         run: |
