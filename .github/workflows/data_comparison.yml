@@ -22,6 +22,7 @@ jobs:
         run: |
           echo "DEXTTOOLS_API_KEY: $DEXTTOOLS_API_KEY"
           echo "DISCORD_WEBHOOK_URL: $DISCORD_WEBHOOK_URL"
+          echo "${{ secrets.TESTDATA }}"
 
       - name: Install dependencies
         run: |
