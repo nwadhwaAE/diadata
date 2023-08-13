@@ -18,6 +18,11 @@ jobs:
         with:
           python-version: 3.x
 
+      - name: Print Environment Variables
+        run: |
+          echo "DEXTTOOLS_API_KEY: $DEXTTOOLS_API_KEY"
+          echo "DISCORD_WEBHOOK_URL: $DISCORD_WEBHOOK_URL"
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
