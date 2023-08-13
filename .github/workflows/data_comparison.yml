@@ -31,10 +31,9 @@ jobs:
 
       - name: Run script
         run: python main.py  # Replace with your script's filename
+        env:
+          DEXTTOOLS_API_KEY: ${{ secrets.DEXTTOOLS_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: Send results to Discord
-        env:
-          DEXTTOOLS_API_KEY: ${{ secrets.DEXTTOOLS_API_KEY }}  # Using the secret
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}  # Using the secret
         run: python utils/discord_integration.py
-
