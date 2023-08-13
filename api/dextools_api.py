@@ -1,4 +1,5 @@
 import requests
+import os
 
 def fetch_dextools_price(chain, address):
     url = 'https://api.dextools.io/v1/token'
@@ -9,7 +10,7 @@ def fetch_dextools_price(chain, address):
     
     headers = {
         'accept': 'application/json',
-        'X-API-Key': '0e9a4183bea257909e28e54846483563'
+        'X-API-Key': os.environ.get('DEXTTOOLS_API_KEY')  # Using the secret as environment variable
     }
     
     response = requests.get(url, params=params, headers=headers)
