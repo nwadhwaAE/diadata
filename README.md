@@ -6,6 +6,8 @@ This GitHub repository contains a Python-based framework designed to address the
 
 
 
+
+
 **Framework**:
 
 The repository has the following folder structure:
@@ -27,6 +29,8 @@ The repository has the following folder structure:
 
 
 
+
+
 **Solution**:
 
 The **approach** taken to tackle the problem involves the following steps:
@@ -41,12 +45,16 @@ The **approach** taken to tackle the problem involves the following steps:
 
 
 
+
+
 **GitHub Secrets**:
 
 To ensure secure usage, the repository relies on two GitHub secrets:
 
     Dextools Key: This secret is required for accessing the DEXTools API.
     Discord Webhook: This secret is used for sending notifications to a Discord channel.
+
+
 
 
 **Getting Started:**
