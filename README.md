@@ -46,9 +46,12 @@ To ensure secure usage, the repository relies on two GitHub secrets:
 
 **Getting Started:**
 
-Set up the required GitHub secrets (Dextools Key and Discord Webhook).
+-> Set up the required GitHub secrets (Dextools Key and Discord Webhook).
+-> Run the main.py script to initiate the data capture, comparison, and notification process.
+OR
+->Fork the repo add the required secrets and just execute it via Github Actions.
 
-Run the main.py script to initiate the data capture, comparison, and notification process.
+
 
 
 **End Result:**
