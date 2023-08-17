@@ -71,5 +71,6 @@ OR
 
 
 **End Result:**
-<img width="1131" alt="Screenshot 2023-08-17 at 12 51 29 PM" src="https://github.com/nwadhwaAE/diadata/assets/90784985/121d4657-16d7-4de2-9e6b-2050582fbe90">
+<img width="1134" alt="Screenshot 2023-08-18 at 2 10 18 AM" src="https://github.com/nwadhwaAE/diadata/assets/90784985/9c6b35eb-7080-452a-bfe3-012406a5ed05">
+
 
